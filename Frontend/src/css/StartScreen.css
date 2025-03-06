@@ -1,0 +1,113 @@
+.StartScreen {
+    display: block;
+    height: 100vh;
+	background-image: url("../res/drafting-table.png");
+	background-size: 100% 100%;
+}
+
+.StartScreen-TitleBlock {
+	display: flex;
+	flex-direction: column-reverse;
+	height: 40vh;
+	align-items: center;
+}
+
+.StartScreen-Bottom {
+	padding-top: 10vh;
+	margin-left: 25%;
+	margin-right: 25%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.StartScreen-Title {
+	height: 40vh;
+	width: 81vh;
+}
+
+.StartScreen-Title-Button {
+	width: 20vw;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	background-color: #F0EDFF;
+}
+
+.StartScreen-Title-Button:hover {
+	background-color: #BFBDCC;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.StartScreen-Title-Button-Text {
+
+}
+
+.StartScreen-Input {
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+	font-size: 1.4rem;
+	border-radius: 5px;
+}
+
+.StartScreen-InputBlock > input {
+	font-size: 1.5rem;
+	background-color: transparent;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid black;
+}
+
+.StartScreen-Bottom-Back-Block {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.StartScreen-Back {
+	margin-left: 10%;
+	background-image: url("../res/back.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+
+.StartScreen-Back:hover {
+	background-image: url("../res/back-selected.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.StartScreen-Expansion-Title {
+	font-size: 3rem;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.StartScreen-Expansion-Numbers {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.StartScreen-Expansion-Numbers > div {
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 70px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 180px;
+}
+
+.StartScreen-Expansion-Numbers-Selected {
+	border: 1px solid black;
+}

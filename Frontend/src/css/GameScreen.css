@@ -1,0 +1,463 @@
+.GameScreen {
+    height: 100vh;
+	background-image: url("../res/gameplay-background.png");
+	background-size: 100% 100%;
+}
+
+.GameScreen-Players {
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	padding-left: 200px;
+	padding-right: 200px;
+    justify-content: space-evenly;
+}
+
+.GameScreen-Player {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 150px;
+	text-align: center;
+}
+
+.GameScreen-Player > h3 {
+	font-size: 2rem;
+	color: white;
+	margin: 0px;
+	margin-bottom: 10px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.GameScreen-Player > img {
+	height: 10vh;
+	width: 10vh;
+}
+
+.GameScreen-Player-Cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.GameScreen-Player-Cards > img {
+	height: 30px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.GameScreen-Middle {
+	height: 50vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.GameScreen-HoverCard {
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+}
+
+.GameScreen-HoverCard > img {
+	height: 49vh;
+}
+
+.GameScreen-Archive {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.GameScreen-Archive-Bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.GameScreen-Archive-Bottom > div {
+	margin-right: 50px;
+}
+
+.GameScreen-TurnIndicator-CurrentPlayer > img {
+	height: 100px;
+	width: 113px;
+	transform: rotate(-90deg);
+}
+
+.GameScreen-DraftingBoard {
+	height: 50vh;
+	width: 40vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../res/drafting-table.png");
+	background-size: 100% 100%;
+}
+
+.GameScreen-DraftingBoard > img {
+	height: 30vh;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.GameScreen-DrawPile:hover {
+	background-color: white;
+	box-shadow: 0px 0px 10px 10px white;
+	-moz-box-shadow: 0px 0px 10px 10px white;
+	-webkit-box-shadow: 0px 0px 10px 10px white;
+	-khtml-box-shadow: 0px 0px 10px 10px white;
+	cursor: pointer;
+}
+
+.GameScreen-Bottom {
+	display: flex;
+	justify-content: center;
+}
+
+.GameScreen-Hand {
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	overflow-x: auto;
+}
+
+.GameScreen-Hand-Card {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.GameScreen-Hand-Card-Image {
+	height: 25vh;
+}
+
+.GameScreen-Hand-Card-Bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.GameScreen-Hand-Card-Bottom > img {
+	height: 100%;
+}
+
+.GameScreen-Hand-Card-Bottom > img:hover {
+	cursor: pointer;
+}
+
+.GameScreen-Hand-Card-Image:hover {
+	background-color: white;
+	box-shadow: 0px 0px 5px 5px white;
+	-moz-box-shadow: 0px 0px 5px 5px white;
+	-webkit-box-shadow: 0px 0px 5px 5px white;
+	-khtml-box-shadow: 0px 0px 5px 5px white;
+	cursor: pointer;
+}
+
+.GameScreen-TurnIndicator {
+	position: relative;
+}
+
+.GameScreen-TurnIndicator > img {
+	position: absolute;
+	height: 50px;
+	width: 66px;
+	top: 10vh;
+	left: 200px;
+}
+
+.GameScreen-Popup {
+	position: fixed;
+	z-index: 9999;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.GameScreen-Popup > div {;
+	background-color: white;
+	border: 1px solid black;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	height: 80vh;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+.GameScreen-Popup > div > div {
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.GameScreen-CardActionCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.GameScreen-SharePreviewUsers {
+	height: 50vh;
+	margin: 10px;
+}
+
+.GameScreen-CardActionCard {
+	height: 50vh;
+	margin: 10px;
+}
+
+.GameScreen-Back {
+	width: 100%;
+	margin-bottom: 15px;
+	position: fixed;
+}
+
+.GameScreen-Back > div {
+	background-image: url("../res/back.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	margin-left: 22vw;
+}
+
+.GameScreen-Back > div:hover {
+	background-image: url("../res/back-selected-grey.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.GameScreen-Back-Normal {
+	width: 100%;
+	margin-bottom: 15px;
+	position: fixed;
+	left: 22vw;
+}
+
+.GameScreen-Back-Normal > div {
+	background-image: url("../res/back.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+
+.GameScreen-Back-Normal > div:hover {
+	background-image: url("../res/back-selected-grey.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.GameScreen-SharePreviewUser:hover {
+	border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.GameScreen-CardActionCardSelectable:hover {
+	background-color: grey;
+	box-shadow: 0px 0px 10px 10px grey;
+	-moz-box-shadow: 0px 0px 10px 10px grey;
+	-webkit-box-shadow: 0px 0px 10px 10px grey;
+	-khtml-box-shadow: 0px 0px 10px 10px grey;
+	cursor: pointer;
+}
+
+.GameScreen-CardActionCard-Col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.GameScreen-CardActionCard-Col > input {
+	width: 100px;
+}
+
+.GameScreen-Vendetta-SelectTarget {
+	width: 100%;
+	text-align: center;
+}
+
+.GameScreen-ShowUsers-Vendetta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.GameScreen-USBIndicator {
+	position: relative;
+}
+
+.GameScreen-USBIndicator > img {
+	position: absolute;
+	height: 50px;
+	width: 66px;
+	top: 0vh;
+	left: 200px;
+}
+
+.GameScreen-HandIndicator {
+	position: relative;
+}
+
+.GameScreen-HandIndicator > img {
+	position: absolute;
+	height: 50px;
+	width: 66px;
+	top: 50px;
+	left: 200px;
+}
+
+.GameScreen-USBIndicator-CurrentPlayer {
+	margin-right: 50px;
+}
+
+.GameScreen-USBIndicator-CurrentPlayer > img {
+	height: 100px;
+	width: 120px;
+}
+
+.GameScreen-ArchiveFlow {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.GameScreen-Archive-ArchiveButton {
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+.GameScreen-ArchiveFlow-Outer {
+	width: 100%;
+}
+
+.GameScreen-KnowledgeCardSelected {
+	background-color: #4CFF00;
+	box-shadow: 0px 0px 10px 10px #4CFF00;
+	-moz-box-shadow: 0px 0px 10px 10px #4CFF00;
+	-webkit-box-shadow: 0px 0px 10px 10px #4CFF00;
+	-khtml-box-shadow: 0px 0px 10px 10px #4CFF00;
+	cursor: pointer;
+}
+
+.GameScreen-KnowledgeCardSelected:hover {
+	background-color: #3DCC00;
+	box-shadow: 0px 0px 10px 10px #3DCC00;
+	-moz-box-shadow: 0px 0px 10px 10px #3DCC00;
+	-webkit-box-shadow: 0px 0px 10px 10px #3DCC00;
+	-khtml-box-shadow: 0px 0px 10px 10px #3DCC00;
+	cursor: pointer;
+}
+
+.GameScreen-ImgShake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.GameScreen-Loading {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 999;
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.GameScreen-PlayerEliminated {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.85);
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.GameScreen-PlayerEliminated > img {
+	width: 100%;
+}
+
+.GameScreen-Loading > img {
+	width: 200px;
+}
+
+.GameScreen-Loading > h2 {
+	color: white;
+}
+
+.GameScreen-HandCount {
+	margin: 0px;
+	margin-right: 50px;
+}
+
+.GameScreen-HandCount > h3 {
+	margin: 0px;
+	font-size: 2.5rem;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.GameScreen-Back-Eliminated {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 999;
+	top: 15px;
+	left: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.GameScreen-Back-Eliminated > div {
+	background-image: url("../res/back.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+
+.GameScreen-Back-Eliminated > div:hover {
+	background-image: url("../res/back-selected-grey.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.GameScreen-ArchitectureMemoryLoss {
+	text-align: center;
+}

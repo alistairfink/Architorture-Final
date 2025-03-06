@@ -1,0 +1,52 @@
+.RulesScreen {
+	background: white;
+	position: absolute;
+	z-index: 999;
+}
+
+.RulesScreen-Content {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	overflow-y: auto;
+}
+
+.RulesScreen-Back-Outer {
+	padding: 20px;
+	padding-left: 100px;
+}
+
+.RulesScreen-Back {
+	background-image: url("../res/back.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+}
+
+.RulesScreen-Back:hover {
+	background-image: url("../res/back-selected-grey.svg");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.RulesScreen-Cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.RulesScreen-Card {
+	margin: 20px;
+	height: 500px;
+}
+
+.RulesScreen-Text {
+	margin-left: 20vw;
+	margin-right: 20vw;
+}

@@ -1,0 +1,78 @@
+.LobbyScreen {
+    height: 100vh;
+	background-image: url("../res/drafting-table.png");
+	background-size: 100% 100%;
+}
+
+.LobbyScreen-Top {
+	height: 75%;
+	align-content: center;
+	text-align: center;
+}
+
+.LobbyScreen-ExpansionText {
+	margin: 0px;
+	padding-top: 20vh;
+	font-size: 5rem;
+	margin-bottom: 100px;
+}
+
+.LobbyScreen-Bottom {
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.LobbyScreen-Bottom-Top {
+	display: flex;
+	flex-direction: row;
+}
+
+.LobbyScreen-Bottom-RoomCode {
+	font-size: 2.5rem;
+}
+
+.LobbyScreen-Bottom-Top-Right {
+	display: flex;
+	flex: 1;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.LobbyScreen-Players {
+	overflow: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.LobbyScreen-Player {
+	margin: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0px;
+	display: flex;
+	flex: 0;
+	flex-direction: column;
+}
+
+.LobbyScreen-Player > img {
+	height: 150px;
+	width: 150px;
+}
+
+.LobbyScreen-Player > h3 {
+	margin: 0px;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+.LobbyScreen-Player-Ready {
+	color: green;
+}
+
+.LobbyScreen-Player-NotReady {
+	color: red;
+}
