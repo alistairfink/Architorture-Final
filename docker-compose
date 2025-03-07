@@ -1,0 +1,33 @@
+services:
+  frontend:
+    image: gitea.app.alistairfink.com/alistairfink/architorture-frontend:latest
+    restart: unless-stopped
+    ports:
+      - "5011:5000"
+    networks:
+      architorture-network:
+        ipv4_address: 172.18.0.22
+
+  backend:
+    image: gitea.app.alistairfink.com/alistairfink/architorture-backend:latest
+    restart: unless-stopped
+    networks:
+      architorture-network:
+        ipv4_address: 172.18.0.21
+
+  db:
+    image: docker.io/library/postgres:latest
+    restart: unless-stopped
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_PASSWORD: replace_with_password
+    networks:
+      architorture-network:
+        ipv4_address: 172.18.0.20
+
+networks:
+  architorture-network:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.18.0.0/16
