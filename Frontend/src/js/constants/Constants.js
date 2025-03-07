@@ -1,4 +1,4 @@
-const BaseUrl = "architorture.app.alistairfink.com";
+const BaseUrl = "architorture-api.app.alistairfink.com";
 
-export const ApiBaseUrl = "https://" + BaseUrl + "/api/";
-export const WsBaseUrl = "wss://" + BaseUrl + "/api/ws";
+export const ApiBaseUrl = "https://" + BaseUrl+"/";
+export const WsBaseUrl = "wss://" + BaseUrl + "/ws";

@@ -11,6 +11,8 @@ services:
   backend:
     image: gitea.app.alistairfink.com/alistairfink/architorture-backend:latest
     restart: unless-stopped
+    ports:
+      - "5012:8080"
     networks:
       architorture-network:
         ipv4_address: 172.18.0.21
