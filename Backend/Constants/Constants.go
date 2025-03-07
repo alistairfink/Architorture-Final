@@ -9,8 +9,8 @@ const (
 	PongWait           = 60 * time.Second
 	PingPeriod         = (PongWait * 9) / 10
 	MaxMessageSize     = 512
-	DBName             = "Architorture"
+	DBName             = "architorture"
 	DBConnectionString = "172.18.0.20:5432"
 	DBUser             = "postgres"
-	DBPass             = ""
+	DBPass             = "replace_with_password"
 )

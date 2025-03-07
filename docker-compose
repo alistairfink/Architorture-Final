@@ -18,7 +18,7 @@ services:
         ipv4_address: 172.18.0.21
 
   db:
-    image: docker.io/library/postgres:latest
+    image: gitea.app.alistairfink.com/alistairfink/architorture-db:latest
     restart: unless-stopped
     environment:
       PGDATA: /var/lib/postgresql/data/pgdata
