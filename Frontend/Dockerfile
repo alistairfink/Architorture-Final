@@ -7,15 +7,6 @@ RUN npm run build
 
 RUN ls -al /build
 
-#FROM alpine:latest
-#RUN apk --no-cache add ca-certificates
-#WORKDIR /root/
-#COPY --from=builder /go/bin/Architorture-Backend .
-#
-#EXPOSE 8080
-#
-#CMD ["./Architorture-Backend"]
-
 FROM docker.io/library/nginx:latest
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /build /usr/share/nginx/html

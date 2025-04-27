@@ -1,21 +1,13 @@
 services:
-  frontend:
-    image: gitea.app.alistairfink.com/alistairfink/architorture-frontend:latest
+  service:
+    image: gitea.app.alistairfink.com/alistairfink/architorture-final:latest
     restart: unless-stopped
     ports:
       - "5011:5000"
-    networks:
-      architorture-network:
-        ipv4_address: 172.18.0.22
-
-  backend:
-    image: gitea.app.alistairfink.com/alistairfink/architorture-backend:latest
-    restart: unless-stopped
-    ports:
       - "5012:8080"
     networks:
       architorture-network:
-        ipv4_address: 172.18.0.21
+        ipv4_address: 172.18.0.22
 
   db:
     image: gitea.app.alistairfink.com/alistairfink/architorture-db:latest
