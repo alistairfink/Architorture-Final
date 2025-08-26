@@ -10,7 +10,7 @@ const (
 	PingPeriod         = (PongWait * 9) / 10
 	MaxMessageSize     = 512
 	DBName             = "architorture"
-	DBConnectionString = "172.18.0.20:5432"
+	DBConnectionString = "localhost:5430"
 	DBUser             = "postgres"
 	DBPass             = "replace_with_password"
 )

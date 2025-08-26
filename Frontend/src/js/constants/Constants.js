@@ -1,4 +1,4 @@
-const BaseUrl = "architorture-api.app.alistairfink.com";
+const BaseUrl = "localhost:8080";
 
-export const ApiBaseUrl = "https://" + BaseUrl + "/";
-export const WsBaseUrl = "wss://" + BaseUrl + "/ws";
+export const ApiBaseUrl = "http://" + BaseUrl + "/";
+export const WsBaseUrl = "ws://" + BaseUrl + "/ws";
